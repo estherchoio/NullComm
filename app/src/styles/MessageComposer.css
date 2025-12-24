@@ -1,0 +1,86 @@
+.composer-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeUp 0.6s ease-out;
+}
+
+.composer-header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+
+.composer-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.composer-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.field-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted-dark);
+}
+
+.text-input,
+.text-area {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  background: #fff;
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+}
+
+.text-area {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.primary-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  background: var(--accent-strong);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.primary-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.18);
+}
+
+.helper-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.helper-text.error {
+  color: #b91c1c;
+}
+
+.helper-text.success {
+  color: #0f766e;
+}
